@@ -1,0 +1,28 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  max-width: 1147px;
+}
+
+
+.description__list {
+  display: flex;
+  list-style-type: none;
+  counter-reset: description;
+  flex-direction: row;
+}
+
+.description__item {
+  counter-increment: benefits;
+  position: relative;
+}
+
+.description__item::before {
+  content: "0" counter(benefits);
+  position: absolute;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 38px;
+  top: -30px;
+  color: $style-color;
+}
