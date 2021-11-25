@@ -1,0 +1,32 @@
+.information-article {
+  box-sizing: border-box;
+  padding-top: 120px;
+  width: 100%;
+  background-color: $basic-black;
+  max-height: 706px;
+  margin-bottom: 248px;
+}
+
+.information-article__wrap {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 929px;
+  align-items: center;
+}
+
+.information-article__title {
+  margin: 0 0 20px 0;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  color: $basic-white;
+}
+
+.information-article__description {
+  font-size: 16px;
+  line-height: 28px;
+  color: $basic-white;
+  max-width: 340px;
+  margin: 0 0 56px 0;
+}
