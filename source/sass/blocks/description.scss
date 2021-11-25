@@ -1,20 +1,36 @@
 .description {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  max-width: 1147px;
+  align-items: center;
+  max-width: 1166px;
+  min-height: 503px;
+  margin: 0 auto;
+  padding-top: 150px;
 }
 
+.description__title {
+  margin: 0 0 50px 0;
+}
 
 .description__list {
   display: flex;
   list-style-type: none;
   counter-reset: description;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
 }
 
 .description__item {
+  box-sizing: border-box;
   counter-increment: benefits;
   position: relative;
+  height: 130px;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  padding-top: 55px;
 }
 
 .description__item::before {
@@ -23,6 +39,7 @@
   font-size: 28px;
   font-weight: bold;
   line-height: 38px;
-  top: -30px;
+  top: 0;
+  left: 45%;
   color: $style-color;
 }

@@ -1,0 +1,44 @@
+.page-header {
+  background-color: $basic-black;
+  min-height: 825px;
+  background-image: url("../img/header-bike@1x.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-bike@2x.webp");
+  }
+}
+
+.page-header__logo-link {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.page-header__wrap {
+  max-width: 873px;
+  margin: 256px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__description {
+  color: $basic-white;
+  width: 381px;
+}
+
+.page-header__description-title {
+  margin: 0 0 24px 0;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+}
+
+.page-header__description-text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+}
