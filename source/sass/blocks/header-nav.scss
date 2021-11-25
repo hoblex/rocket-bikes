@@ -6,6 +6,16 @@
   min-height: 62px;
   border-bottom: 1px solid $basic-white;
   box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    background-color: $basic-white;
+    display: none;
+    right: 0;
+    width: 320px;
+    min-height: 568px;
+    position: fixed;
+    z-index: 1  ;
+  }
 }
 
 .header-nav__list {
