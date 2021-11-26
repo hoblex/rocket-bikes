@@ -86,7 +86,7 @@
       </ul>
     </div>
   </section>
-  <article class="information-article" id="video" style="display: block">
+  <article class="information-article" id="video" style="display: none">
     <div class="information-article__wrap">
       <h2 class="information-article__title">Видео про велосипеды</h2>
       <p class="information-article__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
@@ -94,13 +94,18 @@
         <picture>
           <source type="image/webp" srcset="img/dummy-bike@1x.webp 1x, img/dummy-bike@2x.webp 2x">
 
-          <img src="img/dummy-bike@1x.png" srcset="img/dummy-bike@2x.png 2x" alt="Заглушка дл я превью видео">
+          <img src="img/dummy-bike@1x.png" srcset="img/dummy-bike@2x.png 2x" alt="Заглушка для превью видео" width="929" height="522">
         </picture>
-        <button class="video-player__control" type="button"><span class="visually-hidden">Запустить видео</span></button>
+        <button class="video-player__control" type="button">
+          <svg class="video-player__control-icon" width="65" height="65">
+            <use xlink:href="img/sprite_auto.svg#icon-play"></use>
+          </svg>
+          <span class="visually-hidden">Запустить видео</span>
+        </button>
       </div>
     </div>
   </article>
-  <section class="contacts" id="contacts" style="display: none">
+  <section class="contacts" id="contacts" style="display: block">
     <h2 class="visually-hidden">Контакты</h2>
     <p class="contacts__title">Как нас найти</p>
     <p class="contacts__description">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
