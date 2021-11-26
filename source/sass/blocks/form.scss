@@ -1,5 +1,5 @@
 .form {
-  width: 327px;
+  width: 328px;
 
   @media (max-width: $tablet-width) {
     width: 321px;
@@ -16,7 +16,7 @@
   line-height: 28px;
   font-weight: 600;
   text-align: center;
-  margin: 0 0 20px 0;
+  margin: 6px 0 18px 0;
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
@@ -27,16 +27,18 @@
 .form__control {
   width: 100%;
   box-sizing: border-box;
-  height: 48px;
-  padding-left: 26px;
+  height: 49px;
+  padding-left: 28px;
+  padding-top: 7px;
   border-radius: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  letter-spacing: 0.3px;
 
   &::placeholder {
     font-size: 15px;
     line-height: 24px;
-    color: $basic-gray;
-    letter-spacing: 0;
+    color: $basic-gray-50;
+    font-family: inherit;
   }
 
   @media (max-width: $tablet-width) {
@@ -47,7 +49,7 @@
 .form__submit {
   width: 100%;
   padding: 0;
-  height: 48px;
+  height: 53px;
   border-radius: 6px;
   box-shadow: 0 4px 4px $basic-black-25;
   border: none;

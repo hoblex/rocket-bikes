@@ -4,8 +4,9 @@
   width: 873px;
   margin: 0 auto;
   min-height: 62px;
-  border-bottom: 1px solid $basic-white;
+  border-bottom: 1px solid $basic-white-20;
   box-sizing: border-box;
+  padding-top: 14px;
 
   @media (max-width: $tablet-width) {
     background-color: $basic-white;
@@ -33,10 +34,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 134px;
   width: 100%;
-  justify-content: space-around;
   align-items: center;
-  margin: 0;
+  margin: 0 0 0 19px;
   padding: 0;
 
   @media (max-width: $tablet-width) {
@@ -83,7 +84,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
-  color: $basic-white;
+  color: $basic-white-70;
   text-decoration: none;
 
   @media (max-width: $tablet-width) {
