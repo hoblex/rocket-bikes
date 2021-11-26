@@ -1,5 +1,5 @@
 .page-header {
-  background-color: $basic-black;
+  background-color: $page-header-background;
   min-height: 825px;
   background-image: url("../img/header-bike@1x.webp");
   background-repeat: no-repeat;
@@ -18,6 +18,12 @@
     min-height: 0;
     height: 340px;
     background-position: 0 -50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 390px;
+    background-size: 175%;
+    background-position: center 30px;
   }
 }
 
@@ -51,6 +57,10 @@
       background-color: black;
       box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
     }
+  }
+
+  @media (max-width: $mobile-width) {
+    background-color: $page-header-background;
   }
 }
 
@@ -106,6 +116,10 @@
     align-self: start;
     margin-bottom: 89px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 74px;
+  }
 }
 
 .page-header__description-wrap {
@@ -119,6 +133,11 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 150px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
