@@ -1,12 +1,12 @@
 .page-header {
-  background-color: $page-header-background;
+  background-color: $additional-black;
   min-height: 825px;
   background-image: url("../img/header-bike@1x.webp");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 100%;
   box-sizing: border-box;
-  background-size: 100%;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/header-bike@2x.webp");
@@ -17,13 +17,11 @@
     background-size: cover;
     min-height: 0;
     height: 340px;
-    background-position: 0 -50px;
+    background-position: 50% 50%;
   }
 
   @media (max-width: $mobile-width) {
     height: 390px;
-    background-size: 175%;
-    background-position: center 30px;
   }
 }
 
@@ -60,7 +58,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-color: $page-header-background;
+    background-color: $additional-black;
   }
 }
 
