@@ -1,5 +1,9 @@
 .form {
   width: 327px;
+
+  @media (max-width: $tablet-width) {
+    width: 321px;
+  }
 }
 
 .form__description {
@@ -9,6 +13,11 @@
   font-weight: 600;
   text-align: center;
   margin: 0 0 20px 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    color: $basic-black;
+  }
 }
 
 .form__control {
@@ -23,6 +32,11 @@
     font-size: 15px;
     line-height: 24px;
     color: $basic-gray;
+    letter-spacing: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 21px;
   }
 }
 
