@@ -15,6 +15,7 @@
   position: relative;
 
   &--road {
+    z-index: 0;
     margin-top: 10px;
 
     &::before {
@@ -56,7 +57,7 @@
   }
 
   &--children {
-    &::before {
+    &::after {
       box-sizing: border-box;
       content: '';
       position: absolute;
@@ -66,12 +67,13 @@
       right: -36px;
       border: 17px solid $style-color;
       border-radius: 50%;
+      z-index: 1;
     }
   }
 }
 
 .type-list__item-image {
-  width: 342px;
+  width: 340px;
   margin-bottom: 20px;
 }
 
