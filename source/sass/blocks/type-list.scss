@@ -41,7 +41,7 @@
       box-sizing: border-box;
       content: '';
       position: absolute;
-      top: 25%;
+      top: 155px;
       left: -60px;
       width: 180px;
       height: 180px;
@@ -87,12 +87,12 @@
 
     &::before {
       top: -18px;
-      left: -18px;
+      left: -19px;
     }
 
     &::after {
-      bottom: 36px;
-      right: -18px;
+      bottom: 31px;
+      right: -23px;
     }
 
     @media (max-width: $tablet-width) {
@@ -130,11 +130,12 @@
 }
 
 .type-list__item-image {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .type-list__item-name {
   font-size: 22px;
   line-height: 34px;
   font-weight: 600;
+  letter-spacing: -0.5px;
 }

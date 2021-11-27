@@ -50,6 +50,7 @@
   width: 957px;
   height: 530px;
   margin-bottom: 39px;
+  border: none;
 
   @media (max-width: $tablet-width) {
     max-width: 698px;
@@ -64,11 +65,12 @@
 
 .contacts__data {
   display: flex;
-  max-width: 558px;
+  max-width: 563px;
   width: 100%;
   flex-direction: row;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 90px;
 }
 
 .contacts__email,
@@ -84,4 +86,9 @@
 
 .contacts__email__email-icon {
   margin-right: 15px;
+}
+
+
+.contacts__email__phone-icon {
+  margin-right: 16px;
 }

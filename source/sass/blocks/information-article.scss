@@ -1,7 +1,7 @@
 .information-article {
   box-sizing: border-box;
   width: 100%;
-  background-color: $basic-black;
+  background-color: $video-article-background;
   min-height: 706px;
   margin-bottom: 248px;
   position: relative;
@@ -50,10 +50,11 @@
 .information-article__description {
   font-size: 16px;
   line-height: 28px;
-  color: $basic-white;
+  color: $basic-white-70;
   max-width: 340px;
   margin: 0 0 56px 0;
   text-align: center;
+  letter-spacing: -0.4px;
 
   @media (max-width: $tablet-width) {
     max-width: 429px;
