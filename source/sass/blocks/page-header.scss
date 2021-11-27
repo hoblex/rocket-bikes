@@ -69,6 +69,13 @@
 .page-header--nojs.page-header {
   @media (max-width: $tablet-width) {
     background-position-y: 468px;
+    background-size: 100%;
+    height: 936px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-position-y: 575px;
+    background-size: 150%;
     height: 936px;
   }
 }
