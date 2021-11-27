@@ -66,6 +66,13 @@
   display: none;
 }
 
+.page-header--nojs.page-header {
+  @media (max-width: $tablet-width) {
+    background-position-y: 468px;
+    height: 936px;
+  }
+}
+
 .page-header--opened  .page-header__toggle {
   background-color: $basic-white;
 
