@@ -133,8 +133,42 @@
   }
 }
 
-.type-list__item-picture {
-  margin-bottom: 15px;
+.type-list__item--road .type-list__item-picture {
+  width: 342px;
+  height: 503px;
+  background-color: $picture-background-color;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+.type-list__item--mountain .type-list__item-picture {
+  width: 342px;
+  height: 566px;
+  background-color: $picture-background-color;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+.type-list__item--children .type-list__item-picture {
+  width: 342px;
+  height: 513px;
+  background-color: $picture-background-color;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+.type-list__item-picture
+ {
+  margin-bottom: 21px;
 }
 
 .type-list__item-name {
