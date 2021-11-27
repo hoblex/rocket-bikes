@@ -48,7 +48,7 @@
 
 .form__submit {
   width: 100%;
-  padding: 0;
+  padding: 3px 0 0 0;
   height: 53px;
   border-radius: 6px;
   box-shadow: 0 4px 4px $basic-black-25;
@@ -57,4 +57,5 @@
   font-size: 15px;
   line-height: 21px;
   font-weight: 600;
+  box-sizing: border-box;
 }
