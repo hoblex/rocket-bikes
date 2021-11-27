@@ -21,6 +21,8 @@
   @media (max-width: $tablet-width) {
     font-size: 18px;
     color: $basic-black;
+    width: 324px;
+    margin-bottom: 30px;
   }
 }
 
@@ -28,11 +30,12 @@
   width: 100%;
   box-sizing: border-box;
   height: 49px;
-  padding-left: 28px;
+  padding-left: 29px;
   padding-top: 7px;
   border-radius: 6px;
   margin-bottom: 18px;
   letter-spacing: 0.3px;
+  border: 1px solid $control-gray;
 
   &::placeholder {
     font-size: 15px;
@@ -43,6 +46,7 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 21px;
+    padding-top: 2px;
   }
 }
 
@@ -51,7 +55,6 @@
   padding: 3px 0 0 0;
   height: 53px;
   border-radius: 6px;
-  box-shadow: 0 4px 4px $basic-black-25;
   border: none;
   background-color: $style-color;
   font-size: 15px;

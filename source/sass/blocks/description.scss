@@ -10,7 +10,8 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 413px;
-    max-width: 556px;
+    max-width: 550px;
+    margin-bottom: 30px;
   }
 }
 
@@ -24,6 +25,7 @@
   @media (max-width: $tablet-width) {
     font-size: 24px;
     line-height: 41px;
+    margin-bottom: 29px;
   }
 }
 
@@ -56,6 +58,10 @@
   width: 256px;
   margin-bottom: 40px;
   letter-spacing: -0.5px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .description__item::before {

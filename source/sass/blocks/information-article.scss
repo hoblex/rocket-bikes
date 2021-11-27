@@ -8,6 +8,7 @@
 
   @media (max-width: $tablet-width) {
     min-height: 413px;
+    margin-bottom: 155px;
   }
 
   @media (max-width: $mobile-width) {
@@ -21,12 +22,14 @@
   flex-direction: column;
   width: 929px;
   align-items: center;
-  position: relative;
+  position: absolute;
   top: 120px;
+  left: 256px;
 
   @media (max-width: $tablet-width) {
     top: 70px;
     width: 503px;
+    left: 134px;
   }
 
   @media (max-width: $mobile-width) {
@@ -58,6 +61,7 @@
 
   @media (max-width: $tablet-width) {
     max-width: 429px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile-width) {
