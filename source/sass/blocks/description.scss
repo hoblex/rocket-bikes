@@ -56,7 +56,6 @@
 
 .description__item {
   box-sizing: border-box;
-  counter-increment: benefits;
   position: relative;
   height: 130px;
   font-size: 22px;
@@ -78,7 +77,7 @@
   }
 }
 
-.description__item::before {
+.description__item-number {
   content: "0" counter(benefits);
   position: absolute;
   font-size: 28px;
