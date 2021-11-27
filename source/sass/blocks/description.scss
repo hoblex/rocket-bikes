@@ -13,6 +13,10 @@
     max-width: 550px;
     margin-bottom: 30px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .description__title {
@@ -26,6 +30,10 @@
     font-size: 24px;
     line-height: 41px;
     margin-bottom: 29px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 19px;
   }
 }
 
@@ -62,6 +70,12 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 33px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 }
 
 .description__item::before {
@@ -74,4 +88,8 @@
   left: 44%;
   color: $style-color;
   letter-spacing: -1.27px;
+
+  @media (max-width: $mobile-width) {
+    top: 10px
+  }
 }

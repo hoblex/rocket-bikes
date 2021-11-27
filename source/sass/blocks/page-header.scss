@@ -22,6 +22,7 @@
 
   @media (max-width: $mobile-width) {
     height: 390px;
+    margin-bottom: 19px;
   }
 }
 
@@ -55,10 +56,6 @@
       background-color: black;
       box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
     }
-  }
-
-  @media (max-width: $mobile-width) {
-    background-color: $additional-black;
   }
 }
 
@@ -132,7 +129,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 74px;
+    margin-bottom: 71px;
+    margin-left: 1px;
   }
 }
 
@@ -151,6 +149,7 @@
   @media (max-width: $mobile-width) {
     padding-left: 16px;
     padding-right: 16px;
+    margin-bottom: 133px;
   }
 }
 

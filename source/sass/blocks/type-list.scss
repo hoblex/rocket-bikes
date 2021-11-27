@@ -8,6 +8,10 @@
   box-sizing: border-box;
   gap: 50px;
   justify-content: space-evenly;
+
+  @media (max-width: $mobile-width) {
+    gap: 42px;
+  }
 }
 
 .type-list__item {
