@@ -5,6 +5,7 @@ var pageBody = document.querySelector('.page-body');
 var headerLinks = pageHeader.querySelectorAll('.header-nav__item-link');
 
 var headerForm = document.querySelector('.form');
+var headerFormButton = headerForm.querySelector('.form__submit');
 
 var headerFormNameLabel = headerForm.querySelector('.form__label--name');
 var headerFormNameInput = headerFormNameLabel.querySelector('.form__control');
@@ -42,3 +43,11 @@ headerToggle.addEventListener('click', function () {
 headerLinks.forEach((item) => {
   item.addEventListener('click', menuClose);
 });
+
+function submitHandler(evt) {
+  myStorage.setItem('name', headerFormNameInput.value);
+  myStorage.setItem('phone', headerFormPhoneInput.value);
+  console.log(evt);
+}
+
+headerFormButton.addEventListener('click', submitHandler);
