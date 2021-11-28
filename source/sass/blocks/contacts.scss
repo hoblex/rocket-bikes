@@ -51,6 +51,7 @@
   height: 530px;
   margin-bottom: 39px;
   border: none;
+  background-color: $map-background;
 
   @media (max-width: $tablet-width) {
     max-width: 698px;
