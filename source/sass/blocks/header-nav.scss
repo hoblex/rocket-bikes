@@ -87,6 +87,7 @@
   line-height: 32px;
   color: $basic-white-70;
   text-decoration: none;
+  letter-spacing: -0.3px;
 
   @media (max-width: $tablet-width) {
     display: flex;
@@ -97,5 +98,6 @@
     line-height: 140%;
     color: $nav-gray;
     padding-left: 16px;
+    letter-spacing: 0;
   }
 }
