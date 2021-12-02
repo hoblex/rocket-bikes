@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Агенство подбора велосипедов">
   <title>Агенство Лунный Байк</title>
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans-light.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="js/script.min.js" as="script">
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="stylesheet" href="css/style.min.css">
@@ -40,11 +44,11 @@
       <p class="form__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
       <label class="form__label form__label--name">
         <span class="visually-hidden">Имя пользователя</span>
-        <input type="text" placeholder="Введите Ваше Имя" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required="">
+        <input class="form__control" type="text" placeholder="Введите Ваше Имя" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required="">
       </label>
       <label class="form__label form__label--tel">
         <span class="visually-hidden">Номер телефона</span>
-        <input type="tel" placeholder="Введите Ваш номер телефона" pattern="^[0-9]+$" required="">
+        <input class="form__control" type="tel" placeholder="Введите Ваш номер телефона" pattern="^[0-9]+$" required="">
       </label>
       <button class="form__submit" type="submit">Подобрать велосипед мечты</button>
     </form>
