@@ -34,20 +34,19 @@ function menuClose() {
 
 headerToggle.addEventListener('click', function () {
   if (pageHeader.classList.contains('page-header--closed')) {
-    menuOpen()
+    menuOpen();
   } else {
-    menuClose()
+    menuClose();
   }
 });
 
-headerLinks.forEach((item) => {
+headerLinks.forEach(function (item) {
   item.addEventListener('click', menuClose);
 });
 
 function submitHandler(evt) {
   myStorage.setItem('name', headerFormNameInput.value);
   myStorage.setItem('phone', headerFormPhoneInput.value);
-  console.log(evt);
 }
 
 headerFormButton.addEventListener('click', submitHandler);
