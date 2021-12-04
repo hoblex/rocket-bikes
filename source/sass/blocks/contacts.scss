@@ -4,9 +4,16 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto 98px auto;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
 
   @media (max-width: $mobile-width) {
     margin: 0 0 98px 0;
+    padding: 0;
   }
 }
 
@@ -42,7 +49,7 @@
 
   @media (max-width: $mobile-width) {
     max-width: 260px;
-    margin: 0 0 20px 0;
+    margin: 0 0 16px 0;
   }
 }
 
@@ -54,14 +61,16 @@
   background-color: $map-background;
 
   @media (max-width: $tablet-width) {
-    max-width: 698px;
+    min-width: 698px;
+    width: 100%;
     height: 545px;
     margin-bottom: 21px;
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 316px;
-    height: 250px;
+    min-width: 316px;
+    width: 100%;
+    height: calc(100vw - 70px);
     margin-bottom: 32px;
   }
 }
@@ -117,6 +126,10 @@
 
 .contacts__email__phone-icon {
   margin-right: 16px;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 13px;
+  }
 }
 
 .contacts__email:hover .contacts__email__email-icon,
