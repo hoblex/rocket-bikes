@@ -8,8 +8,8 @@
     }
 
     @media (max-width: $mobile-width) {
-      width: 288px;
-      height: 161px;
+      width: 100%;
+      height: calc(100% - 5px);
     }
   }
 }
@@ -54,8 +54,8 @@
   @media (max-width: $mobile-width) {
     width: 65px;
     height: 65px;
-    left: 39%;
-    top: 29%;
+    left: calc(50% - 32px);
+    top: calc(50% - 32px);
 
     svg {
       width: 65px;

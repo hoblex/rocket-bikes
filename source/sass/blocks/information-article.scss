@@ -14,6 +14,7 @@
   @media (max-width: $mobile-width) {
     min-height: 384px;
     margin-bottom: 118px;
+    padding: 0 16px;
   }
 }
 
@@ -34,7 +35,8 @@
 
   @media (max-width: $mobile-width) {
     top: 84px;
-    width: 288px;
+    width: 100%;
+    max-width: 503px;
     left: 0;
     height: 382px;
   }
@@ -71,7 +73,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 288px;
+    //max-width: 288px;
     margin-bottom: 54px;
   }
 }
