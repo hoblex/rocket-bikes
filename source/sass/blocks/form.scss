@@ -43,9 +43,14 @@
   font-size: 15px;
   line-height: 24px;
   font-family: inherit;
+  cursor: pointer;
 
   &:focus {
     outline-color: $active-color;
+  }
+
+  &:hover {
+    border: 2px solid $active-color;
   }
 
   &::placeholder {
