@@ -89,6 +89,15 @@
   text-decoration: none;
   letter-spacing: -0.3px;
 
+  &:hover,
+  &:focus {
+    color: $style-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
   @media (max-width: $tablet-width) {
     display: flex;
     align-items: center;

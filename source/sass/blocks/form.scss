@@ -44,6 +44,10 @@
   line-height: 24px;
   font-family: inherit;
 
+  &:focus {
+    outline-color: $active-color;
+  }
+
   &::placeholder {
     font-size: 15px;
     line-height: 24px;
@@ -73,6 +77,15 @@
   line-height: 21px;
   font-weight: 600;
   box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $active-color;
+  }
+
+  &:active {
+    color: $basic-black-50;
+  }
 
   @media (max-width: $mobile-width) {
     padding: 0;

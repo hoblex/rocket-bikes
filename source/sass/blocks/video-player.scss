@@ -25,6 +25,19 @@
   background-color: black;
   border: none;
   outline: 1px red $basic-black;
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.6;
+    }
+  }
 
   @media (max-width: $tablet-width) {
     width: 90px;

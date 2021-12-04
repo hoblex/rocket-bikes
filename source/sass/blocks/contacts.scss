@@ -94,6 +94,15 @@
   letter-spacing: 0;
   color: $basic-black-50;
   margin-bottom: 22px;
+
+  &:hover,
+  &:focus {
+    color: $style-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
 }
 
 .contacts__phone {
@@ -108,4 +117,14 @@
 
 .contacts__email__phone-icon {
   margin-right: 16px;
+}
+
+.contacts__email:hover .contacts__email__email-icon,
+.contacts__phone:hover .contacts__email__phone-icon {
+  opacity: 0.6;
+}
+
+.contacts__email:active .contacts__email__email-icon,
+.contacts__phone:active .contacts__email__phone-icon {
+  opacity: 0.3;
 }
