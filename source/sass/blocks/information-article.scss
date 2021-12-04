@@ -11,9 +11,12 @@
     margin-bottom: 155px;
   }
 
+  @media (max-width: 470px) {
+    margin-bottom: 118px;
+  }
+
   @media (max-width: $mobile-width) {
     min-height: 384px;
-    margin-bottom: 118px;
     padding: 0 16px;
   }
 }
@@ -73,7 +76,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    //max-width: 288px;
     margin-bottom: 54px;
   }
 }
