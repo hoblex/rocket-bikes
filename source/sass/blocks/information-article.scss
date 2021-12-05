@@ -7,17 +7,27 @@
   position: relative;
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 348px;
     min-height: 413px;
+    padding: 0 133px;
+  }
+
+  @media (max-width: 940px) {
+    margin-bottom: 265px;
+  }
+
+  @media (max-width: 836px) {
     margin-bottom: 155px;
   }
 
-  @media (max-width: 470px) {
-    margin-bottom: 118px;
-  }
-
   @media (max-width: $mobile-width) {
+    margin-bottom: 180px;
     min-height: 384px;
     padding: 0 16px;
+  }
+
+  @media (max-width: 390px) {
+    margin-bottom: 118px;
   }
 }
 
@@ -32,8 +42,7 @@
 
   @media (max-width: $tablet-width) {
     top: 70px;
-    width: 503px;
-    height: 413px;
+    width: 100%;
   }
 
   @media (max-width: $mobile-width) {
