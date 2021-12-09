@@ -178,7 +178,7 @@
 }
 
 .page-header__description-text {
-  margin: 0;
+  margin: 0 0 240px 0;
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
@@ -188,5 +188,6 @@
     font-size: 18px;
     max-width: 435px;
     text-align: center;
+    margin: 0;
   }
 }
