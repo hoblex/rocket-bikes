@@ -6,7 +6,11 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 288px;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -28,6 +32,7 @@
   @media (max-width: $mobile-width) {
     width: 288px;
     margin-bottom: 20px;
+    align-self: center;
   }
 }
 
