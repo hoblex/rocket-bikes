@@ -52,12 +52,89 @@
     @media (max-width: $tablet-width) {
       margin-top: 0;
     }
+
+    &::before {
+      box-sizing: border-box;
+      content: '';
+      position: absolute;
+      top: 155px;
+      left: -60px;
+      width: 180px;
+      height: 180px;
+      border: 27px solid $style-color;
+      border-radius: 50%;
+      z-index: -1;
+
+      @media (max-width: $tablet-width) {
+        width: 127px;
+        height: 127px;
+        border-width: 18px;
+        top: auto;
+        bottom: 26px;
+        left: -37px;
+      }
+
+      @media (max-width: $mobile-width) {
+        left: -25px;
+      }
+    }
   }
 
   &--mountain {
 
     @media (max-width: $tablet-width) {
       margin-top: 0;
+    }
+
+    &::before,
+    &::after {
+      box-sizing: border-box;
+      content: '';
+      position: absolute;
+      width: 47px;
+      height: 47px;
+      border: 8px solid $style-color;
+
+      @media (max-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    &::before {
+      top: -18px;
+      left: -19px;
+    }
+
+    &::after {
+      top: 542px;
+      right: -23px;
+    }
+  }
+
+  &--children {
+    &::after {
+      box-sizing: border-box;
+      content: '';
+      position: absolute;
+      width: 95px;
+      height: 95px;
+      top: -32px;
+      right: -36px;
+      border: 17px solid $style-color;
+      border-radius: 50%;
+      z-index: 1;
+
+      @media (max-width: $tablet-width) {
+        width: 68px;
+        height: 68px;
+        top: -20px;
+        right: -25px;
+        border-width: 13px;
+      }
+
+      @media (max-width: $mobile-width) {
+        right: -16px;
+      }
     }
   }
 }
@@ -71,32 +148,6 @@
     width: 270px;
     height: 300px;
   }
-
-  &::before {
-    box-sizing: border-box;
-    content: '';
-    position: absolute;
-    top: 155px;
-    left: -60px;
-    width: 180px;
-    height: 180px;
-    border: 27px solid $style-color;
-    border-radius: 50%;
-    z-index: -1;
-
-    @media (max-width: $tablet-width) {
-      width: 127px;
-      height: 127px;
-      border-width: 18px;
-      top: auto;
-      bottom: 26px;
-      left: -37px;
-    }
-
-    @media (max-width: $mobile-width) {
-      left: -25px;
-    }
-  }
 }
 
 .type-list__item--mountain .type-list__item-picture {
@@ -107,30 +158,6 @@
   @media (max-width: $tablet-width) {
     width: 270px;
     height: 300px;
-  }
-
-  &::before,
-  &::after {
-    box-sizing: border-box;
-    content: '';
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    border: 8px solid $style-color;
-
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &::before {
-    top: -18px;
-    left: -19px;
-  }
-
-  &::after {
-    bottom: 31px;
-    right: -23px;
   }
 }
 
@@ -143,31 +170,6 @@
     width: 270px;
     height: 300px;
   }
-
-  &::after {
-    box-sizing: border-box;
-    content: '';
-    position: absolute;
-    width: 95px;
-    height: 95px;
-    top: -32px;
-    right: -36px;
-    border: 17px solid $style-color;
-    border-radius: 50%;
-    z-index: 1;
-
-    @media (max-width: $tablet-width) {
-      width: 68px;
-      height: 68px;
-      top: -20px;
-      right: -25px;
-      border-width: 13px;
-    }
-
-    @media (max-width: $mobile-width) {
-      right: -16px;
-    }
-  }
 }
 
 .type-list__item-picture {
@@ -179,4 +181,5 @@
   line-height: 34px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  text-align: center;
 }
