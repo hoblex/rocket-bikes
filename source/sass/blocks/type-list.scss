@@ -40,10 +40,18 @@
 
   &:nth-child(3n + 1) {
     margin-top: 10px;
+
+    @media (max-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 
   &:nth-child(3n + 2) {
     margin-top: 39px;
+
+    @media (max-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 
   &--road {
@@ -81,7 +89,6 @@
   }
 
   &--mountain {
-
     @media (max-width: $tablet-width) {
       margin-top: 0;
     }

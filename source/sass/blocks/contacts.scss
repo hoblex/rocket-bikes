@@ -84,16 +84,18 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 224px 0 207px;
+  margin: 0 224px 0 207px;
 
   @media (max-width: $tablet-width) {
-    max-width: 559px;
+    max-width: 548px;
+    margin: 0 209px 0 200px;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     gap: 0;
     max-width: 259px;
+    margin: 0;
   }
 }
 
