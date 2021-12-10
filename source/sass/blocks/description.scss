@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1156px;
+  max-width: 1205px;
   min-height: 503px;
   margin: 0 auto;
   padding-top: 153px;
@@ -46,8 +46,10 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  justify-content: space-evenly;
-  column-gap: 44px;
+
+  @media (max-width: $tablet-width) {
+    justify-content: space-between;
+  }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
@@ -63,11 +65,11 @@
   text-align: center;
   padding-top: 55px;
   width: 256px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   letter-spacing: -0.5px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin: 0 0 40px;
   }
 
   @media (max-width: $mobile-width) {
