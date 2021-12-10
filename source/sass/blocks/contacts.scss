@@ -78,12 +78,13 @@
 
 .contacts__data {
   display: flex;
-  max-width: 563px;
+  max-width: 548px;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin: 0px 224px 0 207px;
 
   @media (max-width: $tablet-width) {
     max-width: 559px;
