@@ -44,11 +44,11 @@
       <p class="form__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
       <label class="form__label form__label--name">
         <span class="visually-hidden">Имя пользователя</span>
-        <input class="form__control" type="text" placeholder="Введите Ваше Имя" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required="">
+        <input class="form__control" type="text" placeholder="Введите Ваше Имя" pattern="^[а-яА-ЯёЁa-zA-Z0-9\s\-]+$" required="">
       </label>
       <label class="form__label form__label--tel">
         <span class="visually-hidden">Номер телефона</span>
-        <input class="form__control" type="tel" placeholder="Введите Ваш номер телефона" pattern="^[0-9]+$" required="">
+        <input class="form__control" type="tel" placeholder="Введите Ваш номер телефона" pattern="^[0-9\+]+$" required="">
       </label>
       <button class="form__submit" type="submit">Подобрать велосипед мечты</button>
     </form>

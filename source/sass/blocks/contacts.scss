@@ -83,7 +83,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 90px;
+  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     max-width: 559px;
